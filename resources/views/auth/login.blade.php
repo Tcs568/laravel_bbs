@@ -69,11 +69,17 @@
             </div>
         </div>
     </div>
+    <br />
     <div class="row justify-content-center">
-        E-Mail Address : mail1234@example.com
+        管理者ユーザー<br />
+        E-Mail Address : admin@example.com<br />
+        Password : 1234<br />
     </div>
+    <br />
     <div class="row justify-content-center">
-        Password : 1234
+        ユーザー<br />
+        E-Mail Address : user@example.com<br />
+        Password : 1234<br />
     </div>
 </div>
 @endsection

@@ -67,6 +67,7 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
+        $this->authorize('edit', $article);
         return view('articles.edit', ['article' => $article]);
     }
 
@@ -96,7 +97,6 @@ class ArticleController extends Controller
         $article->delete();
         return redirect(('articles'));
     }
-
     public function __construct()
     {
         $this->middleware('auth')->only(

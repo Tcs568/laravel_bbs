@@ -11,13 +11,19 @@
 |
 */
 
+// use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('top');
 });
 
-Route::resource('articles', 'ArticleController');
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('articles', 'ArticleController');
+
+Route::resource('users', 'UsersController');
+
+Route::group(['middleware' => ['auth', 'can:admin']], function () {
+    Route::get('/users', 'UsersController@index');
+});

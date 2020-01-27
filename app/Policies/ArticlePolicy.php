@@ -2,7 +2,10 @@
 
 namespace App\Policies;
 
+use App\Article;
+use App\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use phpDocumentor\Reflection\DocBlock\Tags\Uses;
 
 class ArticlePolicy
 {
@@ -13,13 +16,8 @@ class ArticlePolicy
      *
      * @return void
      */
-    public function __construct()
+    public function edit(User $user, Article $article)
     {
-        //
-    }
-
-    public function boot()
-    {
-        config(['admin_id' => 185]);
+        return $user->id === $article->user_id;
     }
 }

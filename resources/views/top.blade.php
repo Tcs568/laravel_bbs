@@ -77,7 +77,7 @@
         </div>
 
         <div class="links">
-            <a href="{{ url('/articles') }}">board</a>
+            <a href="{{ url('/articles') }}">Go to board</a>
         </div>
     </div>
     </div>
