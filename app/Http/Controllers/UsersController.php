@@ -47,6 +47,7 @@ class UsersController extends Controller
      */
     public function show(User $user)
     {
+        $this->authorize('edit', $user);
         return view('users.account', ['user' => $user]);
     }
 

@@ -14,8 +14,8 @@ class UserPolicy
      *
      * @return void
      */
-    public function __construct()
+    public function edit(User $user, User $model)
     {
-        //
+        return $user->id == $model->id;
     }
 }

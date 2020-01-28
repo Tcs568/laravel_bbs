@@ -42,11 +42,3 @@ class AuthServiceProvider extends ServiceProvider
         });
     }
 }
-
-
-//adminユーザー　
-//ログイン後/userにリダイレクトさせる
-
-//user/{id}にアクセスしたばあい同一のユーザーであれば処理を実行する
-//同一のuseridのみuser/{id}にアクセスさせる 
-//一致しないidはhomeへリダイレクト
