@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Laravel BBS</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -73,11 +73,11 @@
 
     <div class="content">
         <div class="title m-b-md">
-            Laravel
+            Laravel BBS
         </div>
 
         <div class="links">
-            <a href="{{ url('/articles') }}">Go to board</a>
+            <a href="{{ url('/articles') }}">Go to BBS</a>
         </div>
     </div>
     </div>
