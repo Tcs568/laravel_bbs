@@ -26,7 +26,7 @@ class AddUserIdToArticlesTable extends Migration
     public function down()
     {
         Schema::table('articles', function (Blueprint $table) {
-            Schema::dropColumn('user_id');
+            $table->dropColumn('user_id');
         });
     }
 }
