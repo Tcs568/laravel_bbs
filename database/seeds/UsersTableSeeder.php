@@ -25,8 +25,8 @@ class UsersTableSeeder extends Seeder
         ]);
 
         DB::table('users')->insert([
-            'name' => 'GeneralUser',
-            'email' => 'general@example.com',
+            'name' => 'user',
+            'email' => 'user@example.com',
             'email_verified_at' => $faker->dateTime(),
             'password' => bcrypt('1234'),
             'created_at' => $faker->dateTime(),
